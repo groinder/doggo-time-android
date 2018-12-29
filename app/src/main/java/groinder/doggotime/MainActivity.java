@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
         String accountType = "groinder.doggotime.account.DOGGO_ACCOUNT";
         AccountManager accountManager = AccountManager.get(this);
         Account[] accounts = accountManager.getAccountsByType(accountType);
+
+
         String password = accountManager.getPassword(accounts[0]);
 //        Account account = new Account("krzysiek7775@gmail.com",accountType);
 //        boolean success = accountManager.addAccountExplicitly(account,"P@ssw0rd",null);
